@@ -8,8 +8,8 @@ RSpec.describe 'moduuli Debugattava' do
   it "määrittelee metodin tila" do
     require './debugattava.rb'
     class Testiluokka
-        attr_writer :x, :y
-        include Debugattava
+      attr_writer :x, :y
+      include Debugattava
     end
 
     t = Testiluokka.new
